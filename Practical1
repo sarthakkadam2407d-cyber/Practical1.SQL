@@ -1,0 +1,34 @@
+CREATE TABLE student (
+  studentId INT,
+  name VARCHAR(20),
+  marks INT
+);
+
+INSERT INTO student(studentId, name, marks) VALUES (1,'rahul',56);
+INSERT INTO student(studentId, name, marks) VALUES (2,'cattt',59);
+INSERT INTO student(studentId, name, marks) VALUES (3,'meoww',58);
+
+-- table 2
+CREATE TABLE teacher (
+  teacherId INT,
+  name VARCHAR(20),
+  subject VARCHAR(20)
+);
+
+INSERT INTO teacher(teacherId, name, subject) VALUES (1,'Asha','Math');
+INSERT INTO teacher(teacherId, name, subject) VALUES (2,'Ravi','Science');
+
+-- table 3
+CREATE TABLE course (
+  courseId INT,
+  courseName VARCHAR(20),
+  fee INT
+);
+
+INSERT INTO course(courseId, courseName, fee) VALUES (101,'Java',5000);
+INSERT INTO course(courseId, courseName, fee) VALUES (102,'SQL',3000);
+
+-- fetch
+SELECT * FROM student;
+SELECT * FROM teacher;
+SELECT * FROM course;
